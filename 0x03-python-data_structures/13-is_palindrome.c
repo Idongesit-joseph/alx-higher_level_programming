@@ -25,7 +25,7 @@ int aux_palind(listint_t **head, listint_t *end)
 	if (aux_palind(head, end->next) && (*head)->n == end->n)
 	{
 		*head = (*head)->next;
-		return (i);
+		return (1);
 	}
 	return (0);
 }
